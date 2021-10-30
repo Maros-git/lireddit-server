@@ -1,0 +1,13 @@
+ssr
+    browser -> next.js -> graphql api
+client side 
+    browser -> graphql api
+
+
+when the page first loads, it does ssr request and cookie is not sent
+and does not know who we are so vote status does not work
+
+when I create a post it's going to make another request and after this
+vote status work
+
+we need to tell our server to send cookie to api
