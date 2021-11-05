@@ -22,7 +22,7 @@ import { createUpdootLoader } from "./utils/createUpdootLoader";
     
 
     
-const corsOrigin = process.env.CORS_ORIGIN.split(',') || '';
+//const corsOrigin = process.env.CORS_ORIGIN.split(',') || '';
 
 const main = async () => {
     const conn = await createConnection({
@@ -46,7 +46,7 @@ const main = async () => {
     
     app.use(
         cors({
-            origin: corsOrigin,
+            origin: 'https://lireddit-web.vercel.app/',
             credentials: true,  
             })
         );
