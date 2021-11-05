@@ -99,7 +99,7 @@ const main = async () => {
     });
     
 
-    app.listen(process.env.PORT, () => {
+    app.listen('https://lireddit-server-rm5nvspkx-soloq.vercel.app/', () => {
         console.log('🚀 Server started on localhost:4000')
     })
 };
